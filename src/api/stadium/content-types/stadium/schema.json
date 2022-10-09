@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stadiums",
+  "info": {
+    "singularName": "stadium",
+    "pluralName": "stadiums",
+    "displayName": "Stadium",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "location": {
+      "type": "json"
+    },
+    "capacity": {
+      "type": "biginteger"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

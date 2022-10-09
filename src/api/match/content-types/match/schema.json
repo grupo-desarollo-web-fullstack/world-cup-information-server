@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "singularName": "match",
+    "pluralName": "matches",
+    "displayName": "Match"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "away": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "stadium": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stadium.stadium"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "uid": {
+      "type": "uid"
+    }
+  }
+}
