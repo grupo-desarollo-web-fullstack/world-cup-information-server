@@ -15,9 +15,6 @@
     "name": {
       "type": "string"
     },
-    "abbreviation": {
-      "type": "string"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
@@ -32,6 +29,9 @@
         "videos",
         "audios"
       ]
+    },
+    "abbreviation": {
+      "type": "string"
     }
   }
 }
