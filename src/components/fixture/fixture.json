@@ -2,14 +2,15 @@
   "collectionName": "components_fixture_fixtures",
   "info": {
     "displayName": "Fixture",
-    "icon": "table"
+    "icon": "table",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "matches": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::match.match"
+      "type": "component",
+      "repeatable": true,
+      "component": "match.match"
     }
   }
 }

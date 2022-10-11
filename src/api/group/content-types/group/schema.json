@@ -15,7 +15,8 @@
     "countries": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::country.country"
+      "target": "api::country.country",
+      "mappedBy": "group"
     },
     "name": {
       "type": "string"

@@ -1,15 +1,11 @@
 {
-  "kind": "collectionType",
-  "collectionName": "matches",
+  "collectionName": "components_match_matches",
   "info": {
-    "singularName": "match",
-    "pluralName": "matches",
-    "displayName": "Match"
+    "displayName": "Match",
+    "icon": "search",
+    "description": ""
   },
-  "options": {
-    "draftAndPublish": true
-  },
-  "pluginOptions": {},
+  "options": {},
   "attributes": {
     "home": {
       "type": "relation",
@@ -28,9 +24,6 @@
     },
     "date": {
       "type": "datetime"
-    },
-    "uid": {
-      "type": "uid"
     }
   }
 }
