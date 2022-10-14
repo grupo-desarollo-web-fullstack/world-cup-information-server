@@ -37,6 +37,12 @@
       ],
       "type": "media",
       "multiple": true
+    },
+    "matches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::match.match",
+      "mappedBy": "stadium"
     }
   }
 }

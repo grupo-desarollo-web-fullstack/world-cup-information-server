@@ -38,6 +38,12 @@
       "relation": "manyToOne",
       "target": "api::group.group",
       "inversedBy": "countries"
+    },
+    "matches": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::match.match",
+      "mappedBy": "away"
     }
   }
 }

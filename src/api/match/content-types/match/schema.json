@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "singularName": "match",
+    "pluralName": "matches",
+    "displayName": "Match"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "matches"
+    },
+    "away": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "matches"
+    },
+    "stadium": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::stadium.stadium",
+      "inversedBy": "matches"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
+      "inversedBy": "matches"
+    }
+  }
+}
