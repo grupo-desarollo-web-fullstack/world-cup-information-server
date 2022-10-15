@@ -4,7 +4,8 @@
   "info": {
     "singularName": "match",
     "pluralName": "matches",
-    "displayName": "Match"
+    "displayName": "Match",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +16,13 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::country.country",
-      "inversedBy": "matches"
+      "inversedBy": "matchesHome"
     },
     "away": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::country.country",
-      "inversedBy": "matches"
+      "inversedBy": "matchesAway"
     },
     "stadium": {
       "type": "relation",

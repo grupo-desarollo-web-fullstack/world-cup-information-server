@@ -39,7 +39,13 @@
       "target": "api::group.group",
       "inversedBy": "countries"
     },
-    "matches": {
+    "matchesHome": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::match.match",
+      "mappedBy": "home"
+    },
+    "matchesAway": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::match.match",
